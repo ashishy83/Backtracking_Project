@@ -368,11 +368,15 @@
   </p>
   <p>
     <strong>Trick #1: Indent when you print method entries and exits. </strong>
+  </p>
+  <p>
     Often, the best debugging technique is to print every method call and return (or at least the most important ones). You probably want to print, for each method, what parameters it came in with, and what value it leaves with. However, if you just
     print a long list of these, it's hard to match up method exits with their corresponding entries. Indenting to show the level of nesting can help.
   </p>
   <p>
     <strong>Trick #2: Use specialized print methods for debugging.</strong>
+  </p>
+  <p>
     Don't clutter up your actual code more than you must. Also, remember that code inserted for debugging purposes can itself contain bugs, or (in the worst case) can affect the results, so be very careful with it
   </p>
 
@@ -447,6 +451,8 @@
 
   <p>
     <strong>Trick #3: Never discard your debugging statements.</strong>
+  </p>
+  <p>
     Writing debugging statements is programming, too. Often it's as much work to debug the debugging statements as it is to debug the actual program. Once your program is working, why throw this code away?
   </p>
   <p>
@@ -491,6 +497,8 @@
 
   <p>
     <strong>Trick #4: Create an Exception.</strong>
+  </p>
+  <p>
     If an Exception is thrown, you can get information about just where it happened by sending it the message <font size="4" color="#D2001A">printStackTrace(PrintStream)</font>. Since an Exception is an object like any other, you can create and throw
     your own Exceptions. However, Java programmers don't always realize that you can create an Exception <em>without</em> throwing it. For example, the following code
   </p>
@@ -752,7 +760,7 @@
     Here is some output from the program:
   </p>
 
-  <font size="4" color="#0F0E0E" >
+  <font size="4" color="#0F0E0E">
     <pre>
       <strong>
       16.  WHITE  WHITE  WHITE  _____  BLACK  BLACK  BLACK
